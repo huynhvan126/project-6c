@@ -6,10 +6,10 @@ class Person:
     """Represent a person with name and age."""
     def __init__(self, name, age):
         """Initialize a person object with the given name and age."""
-        self.__name = name
-        self.__age = age
+        self._name = name
+        self._age = age
     def get_age(self):
-        return self.__age
+        return self._age
 def std_dev(people):
     """Calculate the standard deviation of ages in a list of person object."""
     if not people:
